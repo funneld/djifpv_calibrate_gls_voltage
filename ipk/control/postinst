@@ -1,0 +1,3 @@
+#!/system/bin/sh
+
+/opt/sbin/dinitctl enable calibrate-gls-voltage || true
