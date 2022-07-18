@@ -1,5 +1,6 @@
 Package: calibrate-gls-voltage
-Version: 0.0.1
+Version: 0.0.2
 Maintainer: funnel
 Description: Calibrates the goggles displayed voltage. Make a file named "glscalib.txt" on the SD card with a multiplier in it. e.g. 0.98765
 Architecture: pigeon-glasses
+Depends: wtfos-modloader

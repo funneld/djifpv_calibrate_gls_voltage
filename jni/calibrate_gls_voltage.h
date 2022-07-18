@@ -11,6 +11,6 @@ typedef struct GlassRacingChnlUI GlassRacingChnlUI_t;
 struct GlassRacingChnlUI {
 	char dummy[0x4a0];
 	float gs_voltage;
-	char dummy2[0x208]; //end at 0x6ac
+	char dummy2[0x20c]; //end at 0x6b0
 
 }__attribute__((packed, aligned(1)));

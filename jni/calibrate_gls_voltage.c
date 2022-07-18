@@ -11,7 +11,7 @@ void _ZN17GlassRacingChnlUI11updateParamEv(void* this) {
 	if (!racingChnlupdateParam){
 	racingChnlupdateParam = dlsym (RTLD_NEXT, "_ZN17GlassRacingChnlUI11updateParamEv");
 		if (racingChnlupdateParam == 0){
-			guiLib = dlopen("/system/lib/libtp1801_gui.so", 1);
+			if(!guiLib){guiLib = dlopen("/system/lib/libtp1801_gui.so", 1);}
 			racingChnlupdateParam = dlsym (guiLib, "_ZN17GlassRacingChnlUI11updateParamEv");
 			if (racingChnlupdateParam == 0)
 			{
